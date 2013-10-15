@@ -1,7 +1,7 @@
 neo_graph_search
 ================
 
-A POC at replicating Facebook Graph Search with Cypher and Neo4j
+A POC replicating Facebook Graph Search 
 
 Pre-Requisites
 --------------
@@ -32,13 +32,13 @@ On Heroku
 
     git clone git@github.com:rrengamani/neosocial.git
     heroku apps:create neosocial
-    heroku config:add SESSION_SECRET=<your session secret>
     heroku config:add FACEBOOK_APP_ID=<your facebook app id>
     heroku config:add FACEBOOK_SECRET=<your facebook secret>
+    heroku config:add SESSION_SECRET=<your session secret>
     heroku addons:add neo4j
     heroku addons:add redistogo
     git push heroku master
     heroku ps:scale worker=1
     heroku run rake neo4j:create
 
-See it running live at http://heroku.socialgraphdemo.com
+See it running live at http://rams-fb-graph-demo.herokuapp.com

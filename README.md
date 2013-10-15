@@ -15,7 +15,7 @@ Pre-Requisites
 Installation
 ----------------
 
-    git clone git@github.com:rrengamani/neo_graph_search.git
+    git clone https://github.com/rrengamani/fb_social_search.git
     bundle install (run gem install bundler if you don't have bundler installed)
     ruby -e "$(curl -fksSL https://raw.github.com/mxcl/homebrew/go)"
     brew install redis
@@ -30,7 +30,7 @@ Installation
 On Heroku
 ---------
 
-    git clone git@github.com:rrengamani/neosocial.git
+    git clone git@github.com:rrengamani/fb_social_search.git
     heroku apps:create neosocial
     heroku config:add FACEBOOK_APP_ID=<your facebook app id>
     heroku config:add FACEBOOK_SECRET=<your facebook secret>

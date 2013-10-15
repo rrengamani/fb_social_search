@@ -41,4 +41,4 @@ On Heroku
     heroku ps:scale worker=1
     heroku run rake neo4j:create
 
-See it running live at http://rams-fb-graph-demo.herokuapp.com
+See it running live at http://fast-ridge-4288.herokuapp.com/

@@ -1,5 +1,5 @@
-neo_graph_search
-================
+Ram's FB Graph Search Demo
+==========================
 
 A POC replicating Facebook Graph Search 
 

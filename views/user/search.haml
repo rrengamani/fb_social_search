@@ -11,20 +11,11 @@
         %a{:href => "/user/#{current_user.uid}/search?q=friends+who+like+walmart"}
           friends who like walmart
         ,
-        %a{:href => "/user/#{current_user.uid}/search?q=people+who+like+movies+and+popcorn"}
-          people who like movies and popcorn
+        %a{:href => "/user/#{current_user.uid}/search?q=friends+who+like+facebook"}
+          friends who like facebook
         ,
-        %a{:href => "/user/#{current_user.uid}/search?q=people+who+like+fitness+and+live+in+Fremont"}
-          people who like fitness and live in Fremont 
-    .row
-      .span6
-        .well
-          %h2="Cypher Query:"
-          = @cypher[0]
-          %br
-          -if @cypher[1]
-            Parameters:
-            = @cypher[1]
+        %a{:href => "/user/#{current_user.uid}/search?q=people+who+like+BMW"}
+          people who like BMW
     .row
       %ul.thumbnails
         - @people.each do |person|

@@ -1,21 +1,21 @@
 .container
   .content
     .row
-      %h2="Graph Search"
+      %h2="Ram's FB Graph Search - Demo"
     .row
       %form.form-search{:method => "get", :action => "/user/#{current_user.uid}/search"}
         .input-append
           %input.span5.search-query{:type => "text", :value => @q, :name => "q"}
           %button.btn Search           
         Try: 
-        %a{:href => "/user/#{current_user.uid}/search?q=friends+who+like+wine"}
-          friends who like wine
+        %a{:href => "/user/#{current_user.uid}/search?q=friends+who+like+walmart"}
+          friends who like walmart
         ,
-        %a{:href => "/user/#{current_user.uid}/search?q=people+who+like+wine+and+cheese"}
-          people who like wine and cheese
+        %a{:href => "/user/#{current_user.uid}/search?q=people+who+like+movies+and+popcorn"}
+          people who like movies and popcorn
         ,
-        %a{:href => "/user/#{current_user.uid}/search?q=people+who+like+cycling+and+live+in+Florida"}
-          people who like cycling and live in Florida
+        %a{:href => "/user/#{current_user.uid}/search?q=people+who+like+fitness+and+live+in+Fremont"}
+          people who like fitness and live in Fremont 
     .row
       .span6
         .well
@@ -25,17 +25,6 @@
           -if @cypher[1]
             Parameters:
             = @cypher[1]
-      .span6
-        .well
-          Want your own Graph Search?  Contact 
-          %a{:href => "http://demo4u.com/about/"}
-            me
-          and learn more about
-          %a{:href => "http://neo4j.org"}
-            Neo4j
-          and
-          %a{:href => "http://neotechnology.com"}
-            NeoTechnology
     .row
       %ul.thumbnails
         - @people.each do |person|

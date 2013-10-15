@@ -1,0 +1,14 @@
+.container
+  .content
+    .row
+      .span9
+        .well
+          %h1=@user.name
+          %h2=@user.location
+          %h2
+            %a{:href => "/user/#{@user.uid}/friends"}
+              = "#{@friends_count} Friends"
+          %h2
+            %a{:href => "/user/#{@user.uid}/likes"}
+              = "#{@likes_count} Likes"
+          %img{:src => "https://graph.facebook.com/#{@user.uid}/picture?type=large"}
